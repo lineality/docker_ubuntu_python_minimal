@@ -98,7 +98,7 @@ Hello, World.
 
 ## Remove Old Files 
 ```
-$ sudo docker system prune -y
+$ sudo docker system prune
 ```
 
 ## Sources and Resources
