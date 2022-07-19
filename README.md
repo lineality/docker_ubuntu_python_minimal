@@ -27,7 +27,7 @@ Having a readme or instructions file is helpful for documentation and clear comm
 # Instructions and Guide
 ```
 
-## Requirements.txt
+## requirements.txt
 Add this text to your file. This specific minimal project has no required text, no required packages, but some docker applications require a 'requirements.txt' file even if that file is blank. (e.g. AWS-lambda-function docker-containers)
 ```
 # list of python requirements
