@@ -2,9 +2,11 @@
 
 
 # Overview
-If you are setting up docker on ubuntu linux to run a python script, here is sample minimal code. 
+If you are setting up docker on ubuntu linux to run a python script, here is sample minimal code. Follow each step and run each command in your terminal. 
 
-Follow each step and run each command in your terminal. It is recommended that you create a project-folder and then do your work in that folder("directory"). Run this line of code to do that:
+
+## New Project Folder
+It is recommended that you create a project-folder and then do your work in that folder("directory"). Run this line of code to create a project folder and then make that folder the "current working directory" where your terminal opera"my_project_folder" is arbitrary, you can name your project anything you like.
 ```
 $ mkdir my_project_folder; cd my_project_folder
 ```
