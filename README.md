@@ -76,7 +76,7 @@ Add this text to your file. The period "." is not a typo:
 sudo docker build -t abc .
 ```
 
-#### Successful builds outputs these lines at end:
+#### Successful builds output these lines at end:
 ```
 Successfully built ############
 Successfully tagged ###:latest
