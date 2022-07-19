@@ -71,9 +71,13 @@ print( "Hello, World." )
 ```
 
 ## Build your Docker image
-Add this text to your file. The period "." is not a typo:
+Add this text to your file. 
+
+"project_abc" is an arbitrary project name, you can use any name you like.
+
+The final period "." is not a typo:
 ```
-sudo docker build -t abc .
+sudo docker build -t project_abc .
 ```
 
 #### Successful builds output these lines at end:
@@ -84,7 +88,7 @@ Successfully tagged ###:latest
 
 ## Run your Docker container
 ```
-$ sudo docker run -p 9000:8080 abc:latest
+$ sudo docker run -p 9000:8080 project_abc:latest
 ```
 
 #### Successful run should output something like this: 
