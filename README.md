@@ -2,7 +2,7 @@
 
 
 # Overview
-If you are setting up docker on ubuntu linux to run a python script, here is sample minimal code. Follow each step and run each command in your terminal. 
+If you are setting up docker on ubuntu linux to run a python script, here is sample minimal code. Follow each step and run each command in your terminal. Instructions that start with "$" are likely terminal commands. Other instructions will be text to copy into files.
 
 
 ## New Project Folder
@@ -22,17 +22,19 @@ $ touch app.py; touch Dockerfile; touch requirements.txt; touch readme.md
 ```
 
 ## readme.md / readme.txt 
-Having a readme or instructions file is helpful for documentation and clear communication. You can put the contents of this guide into that readme file.
+Having a readme or instructions file is helpful for documentation and clear communication. You can put the contents of this guide into that readme file. 
 ```
 # Instructions and Guide
 ```
 
 ## Requirements.txt
+Add this text to your file. This specific minimal project has no required text, no required packages, but some docker applications require a 'requirements.txt' file even if that file is blank. (e.g. AWS-lambda-function docker-containers)
 ```
-# this minimal starter project has no requirements
+# list of python requirements
 ```
 
 # Dockerfile
+Add this text to your file. 
 ```
 # Get docker base image
 FROM ubuntu:18.04
@@ -63,12 +65,13 @@ CMD [ "app.py" ]
 ```
 
 # app.py
+Add this text to your file. 
 ```
 print( "Hello, World." )
 ```
 
 ## Build your Docker image
-The period "." is not a typo:
+Add this text to your file. The period "." is not a typo:
 ```
 sudo docker build -t abc .
 ```
