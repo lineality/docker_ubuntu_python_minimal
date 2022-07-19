@@ -1,6 +1,15 @@
 # docker_ubuntu_python_minimal
 
-## Remove Old Files 
+
+# Overview
+If you are setting up docker on ubuntu linux to run a python script, here is sample minimal code. 
+
+Follow each step and run each command in your terminal. It is recommended that you create a project-folder and then do your work in that folder("directory"). Run this line of code to do that:
+```
+$ mkdir my_project_folder; cd my_project_folder
+```
+
+## Remove Old Docker Files 
 ```
 $ sudo docker system prune
 ```
@@ -23,31 +32,31 @@ Having a readme or instructions file is helpful for documentation and clear comm
 
 # Dockerfile
 ```
-# get docker base image
+# Get docker base image
 FROM ubuntu:18.04
 
-# update ubuntu linux software and packages
+# Update ubuntu linux software and packages
 RUN apt-get update -y
 
-# install and update pip and python-dev 
+# Install and update pip and python-dev 
 RUN apt-get install -y python3-pip python3-dev
 
-# import requirements.txt into docker
+# Import requirements.txt into docker
 COPY ./requirements.txt /requirements.txt
 
-# set working directory
+# Set working directory
 WORKDIR /
 
-# install python requirements
+# Install python requirements
 RUN pip3 install -r requirements.txt
 
-# ??
+# Copy all files in project directory into docker
 COPY . /
 
-# specify the executable to run
+# Specify the executable to run
 ENTRYPOINT [ "python3" ]
 
-# the function of this docker is to run the app.py
+# The function of this docker is to run the app.py
 CMD [ "app.py" ]
 ```
 
